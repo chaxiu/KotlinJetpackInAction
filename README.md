@@ -7,4 +7,4 @@ A super-simple project demonstrating how to use Kotlin and Jetpack step by step.
 - We will rewrite it from "Java + MVC" to "Kotlin + Coroutines + Jetpack + Clean MVVM", line by line, commit by commit.
 
 ## ScreenShot
-![](./screenshot/screen.gif)
+![ScreenShot](./screenshot/screen.gif)
