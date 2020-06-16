@@ -1,3 +1,7 @@
+`This branch is for training about "Rewriting Gradle script using Kotlin DSL".`
+
+More information could be found in my post: [Rewriting Gradle script using Kotlin DSL](https://juejin.im/post/5ee75805f265da76fb0c5db1)
+
 # KotlinJetpackInAction
 A super-simple project demonstrating how to use Kotlin and Jetpack step by step.
 
