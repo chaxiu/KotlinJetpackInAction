@@ -6,6 +6,7 @@ buildscript {
     }
     dependencies {
         classpath("com.android.tools.build:gradle:${ProjectProperties.agpVersion}")
+        classpath(kotlin("gradle-plugin", version = Versions.kotlinVersion))
     }
 }
 
