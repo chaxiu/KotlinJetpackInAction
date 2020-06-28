@@ -17,7 +17,7 @@ public class ImagePreviewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_image_preview);
 
         Intent intent = getIntent();
-        String url = intent.getStringExtra(MainActivity.Companion.getEXTRA_PHOTO());
+        String url = intent.getStringExtra(Constant.EXTRA_PHOTO);
         if (!TextUtils.isEmpty(url)) {
             ImageView imageView = findViewById(R.id.imagePreview);
             Glide.with(this).load(url).into(imageView);

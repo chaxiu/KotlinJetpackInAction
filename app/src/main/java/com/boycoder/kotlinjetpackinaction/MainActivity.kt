@@ -15,14 +15,12 @@ import com.bumptech.glide.request.RequestOptions
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
-    companion object {
-        val TAG = "Main"
-        val EXTRA_PHOTO = "photo"
-    }
 
-    private lateinit var stringRequest: StringRequest
-    private lateinit var requestQueue: RequestQueue
+class MainActivity : AppCompatActivity() {
+    private val TAG = "Main"
+    private val requestQueue: RequestQueue by lazy(LazyThreadSafetyMode.NONE) {
+        Volley.newRequestQueue(this)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,14 +29,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun init() {
-        display(User.CACHE_RESPONSE)
+        display(CACHE_RESPONSE)
         requestOnlineInfo()
     }
 
     private fun requestOnlineInfo() {
-        requestQueue = Volley.newRequestQueue(this)
+//        requestQueue = Volley.newRequestQueue(this)
         val url = "https://api.github.com/users/JakeWharton"
-        stringRequest = StringRequest(Request.Method.GET,
+        val stringRequest = StringRequest(Request.Method.GET,
                 url,
                 Response.Listener { response ->
                     display(response)
