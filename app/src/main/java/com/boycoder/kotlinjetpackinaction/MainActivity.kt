@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun requestOnlineInfo() {
-//        requestQueue = Volley.newRequestQueue(this)
         val url = "https://api.github.com/users/JakeWharton"
         val stringRequest = StringRequest(Request.Method.GET,
                 url,
