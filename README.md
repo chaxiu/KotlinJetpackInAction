@@ -1,5 +1,5 @@
 # KotlinJetpackInAction
-A super-simple project demonstrating how to use Kotlin and Jetpack step by step.
+A super-simple project demonstrating how to use Kotlin and Jetpack step by step. More information could be found in my posts:[ "Kotlin Jetpack In Action"](https://juejin.im/post/5ee624756fb9a047bb6a69cf)
 
 ## Why this project?
 
