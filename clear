@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "==此命令用于清除指定应用的数据"
+echo "==运行方法是在 terminal 窗口运行：./clear"
+adb shell pm clear com.boycoder.kotlinjetpackinaction
