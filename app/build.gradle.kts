@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     kotlin("android")
     kotlin("android.extensions")
+    id("kotlin-android")
 }
 android {
     compileSdkVersion(ProjectProperties.compileSdk)
@@ -40,10 +41,6 @@ android {
     }
 }
 
-androidExtensions {
-    features = setOf("parcelize")
-}
-
 dependencies {
     // Android
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
@@ -52,6 +49,8 @@ dependencies {
     implementation(Libs.viewmodel)
     implementation(Libs.lifecycle)
     implementation(Libs.lifecycleRT)
+    implementation("androidx.appcompat:appcompat:1.1.0")
+    implementation("androidx.constraintlayout:constraintlayout:1.1.3")
     testImplementation(Libs.junit)
     androidTestImplementation(Libs.testExt)
     androidTestImplementation(Libs.espresso)
