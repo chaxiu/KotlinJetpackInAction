@@ -6,6 +6,7 @@ import android.graphics.*
 import android.util.Log
 import android.widget.Toast
 import com.boycoder.kotlinjetpackinaction.BuildConfig
+import com.boycoder.kotlinjetpackinaction.entity.User
 
 /**
  * Created by zhu.tao on 2020/7/22.
@@ -55,4 +56,9 @@ fun Activity.logD(message: Any) {
     if (BuildConfig.DEBUG) {
         Log.d(this::class.java.simpleName, if (message is String) message else message.toString())
     }
+}
+
+fun User.apply(block: User.() -> Unit): User{
+    block()
+    return this
 }
