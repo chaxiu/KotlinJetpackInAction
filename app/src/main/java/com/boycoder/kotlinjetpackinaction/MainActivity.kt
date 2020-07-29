@@ -9,6 +9,7 @@ import com.android.volley.RequestQueue
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.boycoder.kotlinjetpackinaction.chapter.c04.WebActivity
 import com.boycoder.kotlinjetpackinaction.entity.User
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
@@ -60,6 +61,7 @@ class MainActivity : AppCompatActivity() {
             this@MainActivity.company.text = company
             website.text = blog
             image.setOnClickListener { gotoImagePreviewActivity(this) }
+            username.setOnClickListener { gotoWebActivity() }
         }
 
     }
@@ -67,6 +69,11 @@ class MainActivity : AppCompatActivity() {
     private fun gotoImagePreviewActivity(user: User) {
         val intent = Intent(this, ImagePreviewActivity::class.java)
         intent.putExtra(EXTRA_PHOTO, user.avatar_url)
+        startActivity(intent)
+    }
+
+    private fun gotoWebActivity() {
+        val intent = Intent(this, WebActivity::class.java)
         startActivity(intent)
     }
 
