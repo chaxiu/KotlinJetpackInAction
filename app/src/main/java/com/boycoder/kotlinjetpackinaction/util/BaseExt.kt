@@ -58,7 +58,7 @@ fun Activity.logD(message: Any) {
     }
 }
 
-fun User.apply(block: User.() -> Unit): User{
+fun <T> T.apply(block: T.() -> Unit): T{
     block()
     return this
 }
