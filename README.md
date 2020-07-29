@@ -14,8 +14,9 @@ A super-simple project demonstrating how to use Kotlin and Jetpack step by step.
 | Trainings | Branches | Corresponding Posts |
 | --- | --- | --- |
 | Quick Start For Java Developers | / | [Quick Start For Java Developers](https://juejin.im/post/5ee633ee51882542e8542e4f) |  |
-| Kotlin DSL Traning | [chapter_02_kotlin_dsl_training](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_02_kotlin_dsl_training) | [Kotlin DSL For Gradle](https://juejin.im/post/5ee75805f265da76fb0c5db1) |
+| Kotlin DSL Training | [chapter_02_kotlin_dsl_training](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_02_kotlin_dsl_training) | [Kotlin DSL For Gradle](https://juejin.im/post/5ee75805f265da76fb0c5db1) |
 | Code Refactoring From Java To Kotlin | [chapter_03_kotlin_refactor_training](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_03_kotlin_refactor_training) | [Common Mistakes that Kotlin Newbees Make](https://juejin.im/post/5ef939e05188252e644cdc4c)
+| Kotlin HTML DSL Training | [chapter_04_lambda](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_04_lambda) | [Writing HTML with Kotlin Higher-Order-Function](https://juejin.im/post/5f202f816fb9a07ebd4a95ea)
 
 ## ScreenShot
 -----------------
