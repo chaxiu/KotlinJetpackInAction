@@ -16,6 +16,6 @@
 | Kotlin 重构 Java 代码 | [chapter_03_kotlin_refactor_training](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_03_kotlin_refactor_training) | [《Kotlin 编程的三重境界》](https://juejin.im/post/5ef939e05188252e644cdc4c)
 | Kotlin HTML DSL 练习 | [chapter_04_lambda](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_04_lambda) | [《Kotlin 高阶函数写 HTML 是一种什么体验？》](https://juejin.im/post/5f202f816fb9a07ebd4a95ea)
 
-## ScreenShot
+## 项目截图
 -----------------
 ![ScreenShot](./screenshot/screen.gif)
