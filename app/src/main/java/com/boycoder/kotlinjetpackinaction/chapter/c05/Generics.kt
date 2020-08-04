@@ -82,7 +82,13 @@ fun testGenericsInvariant() {
     university.put(student)
 
     // 报错
-    // university = University<FemaleStudent>("女子大学")
+//     university = University<FemaleStudent>("女子大学")
+
+
+    val sister: FemaleStudent = FemaleStudent()
+    // 报错！！
+//    val inUniversity: University<FemaleStudent> = University<Student>("普通大学")
+//    inUniversity.put(sister)
 }
 
 
