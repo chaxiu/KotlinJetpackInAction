@@ -15,6 +15,8 @@
 | Kotlin DSL 练习 | [chapter_02_kotlin_dsl_training](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_02_kotlin_dsl_training) | [《Kotlin 写 Gradle 脚本是一种什么体验？》](https://juejin.im/post/5ee75805f265da76fb0c5db1) |
 | Kotlin 重构 Java 代码 | [chapter_03_kotlin_refactor_training](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_03_kotlin_refactor_training) | [《Kotlin 编程的三重境界》](https://juejin.im/post/5ef939e05188252e644cdc4c)
 | Kotlin HTML DSL 练习 | [chapter_04_lambda](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_04_lambda) | [《Kotlin 高阶函数写 HTML 是一种什么体验？》](https://juejin.im/post/5f202f816fb9a07ebd4a95ea)
+| Kotlin 泛型 优化 HTML DSL | [chapter_05_generics](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_05_generics) | [Kotlin 泛型](https://juejin.im/post/6856553487598256141)
+| Kotlin 扩展 Span | [chapter_06_extension](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_06_extension) | [Kotlin 扩展](https://juejin.im/post/6857678090794237959)
 
 ## 项目截图
 -----------------
