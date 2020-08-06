@@ -52,7 +52,7 @@ fun Context.toast(message: Any, isLengthLong: Boolean = true) =
                 if (isLengthLong) {Toast.LENGTH_LONG } else { Toast.LENGTH_SHORT}
         ).show()
 
-fun Activity.logD(message: Any) {
+fun Any.logD(message: Any) {
     if (BuildConfig.DEBUG) {
         Log.d(this::class.java.simpleName, if (message is String) message else message.toString())
     }
