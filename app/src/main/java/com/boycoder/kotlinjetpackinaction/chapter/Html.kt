@@ -1,5 +1,7 @@
 package com.boycoder.kotlinjetpackinaction.chapter
 
+import kotlin.reflect.KProperty
+
 interface Element {
     fun render(builder: StringBuilder, indent: String): String
 }
@@ -78,18 +80,18 @@ class Head : BaseElement("head") {
     fun title(block: Title.() -> String) = initString(Title(), block)
 }
 
-class IMG : BaseElement("img") {
-    var src: String
-        get() = hashMap["src"]!!
-        set(value) {
-            hashMap["src"] = value
-        }
+// 这两个扩展函数可以注释掉，这样 by hashMap 会使用官方的实现
+// 感兴趣的可以看看官方怎么实现的。
+operator fun HashMap<String, String?>.getValue(thisRef: Any, property: KProperty<*>): String? =
+        get(property.name)
 
-    var alt: String
-        get() = hashMap["alt"]!!
-        set(value) {
-            hashMap["alt"] = value
-        }
+operator fun HashMap<String, String>.setValue(thisRef: Any, property: KProperty<*>, value: String) =
+        put(property.name, value)
+
+class IMG : BaseElement("img") {
+    var src: String by hashMap
+
+    var alt: String by hashMap
 
     override fun render(builder: StringBuilder, indent: String): String {
         builder.append("$indent<$name")
