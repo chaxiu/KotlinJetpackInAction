@@ -1,20 +1,18 @@
 package com.boycoder.kotlinjetpackinaction
 
 import android.content.Intent
-import android.content.SharedPreferences
 import android.graphics.Color
 import android.os.Bundle
 import android.text.method.LinkMovementMethod
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.edit
 import com.android.volley.Request
 import com.android.volley.RequestQueue
-import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.boycoder.kotlinjetpackinaction.chapter.c04.WebActivity
 import com.boycoder.kotlinjetpackinaction.chapter.c06.*
+import com.boycoder.kotlinjetpackinaction.chapter.c07.PreDelegate
 import com.boycoder.kotlinjetpackinaction.entity.User
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
@@ -28,13 +26,7 @@ class MainActivity : AppCompatActivity() {
         Volley.newRequestQueue(this)
     }
 
-    private val preference: SharedPreferences by lazy(LazyThreadSafetyMode.NONE) {
-        getSharedPreferences(SP_NAME, MODE_PRIVATE)
-    }
-
-    private val spResponse: String? by lazy(LazyThreadSafetyMode.NONE) {
-        preference.getString(SP_KEY_RESPONSE, "")
-    }
+    private var spResponse: String by PreDelegate(SP_KEY_RESPONSE, "")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,6 +44,7 @@ class MainActivity : AppCompatActivity() {
         val stringRequest = StringRequest(Request.Method.GET,
                 url,
                 { response ->
+                    spResponse = response
                     display(response)
                 },
                 { error ->
@@ -65,8 +58,6 @@ class MainActivity : AppCompatActivity() {
         if (response.isNullOrBlank()) {
             return
         }
-
-        preference.edit { putString(SP_KEY_RESPONSE, response) }
 
         val gson = Gson()
         val user = gson.fromJson(response, User::class.java)
