@@ -1,4 +1,4 @@
-package com.boycoder.kotlinjetpackinaction.coroutines
+package com.boycoder.kotlinjetpackinaction.chapter.c08
 
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

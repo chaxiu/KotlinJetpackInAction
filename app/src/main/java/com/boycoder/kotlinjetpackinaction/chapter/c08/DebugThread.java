@@ -1,4 +1,4 @@
-package com.boycoder.kotlinjetpackinaction.coroutines;
+package com.boycoder.kotlinjetpackinaction.chapter.c08;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
