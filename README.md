@@ -19,7 +19,7 @@ A super-simple project demonstrating how to use Kotlin and Jetpack step by step.
 | Kotlin HTML DSL Training | [chapter_04_lambda](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_04_lambda) | [Writing HTML with Kotlin Higher-Order-Function](https://juejin.im/post/5f202f816fb9a07ebd4a95ea)
 | Kotlin Generics Training | [chapter_05_generics](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_05_generics) | [Kotlin Generics](https://juejin.im/post/6856553487598256141)
 | Kotlin Extension Training | [chapter_06_extension](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_06_extension) | [Kotlin Extension](https://juejin.im/post/6857678090794237959)
-| Kotlin Delegation Training | [chapter_07_delegate](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_07_delegate) | [Kotlin Extension](https://juejin.im/post/6857678090794237959)
+| Kotlin Delegation Training | [chapter_07_delegate](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_07_delegate) | [Kotlin Delegation](https://juejin.im/post/6857678090794237959)
 
 ## ScreenShot
 -----------------
