@@ -18,6 +18,7 @@
 | Kotlin 泛型 优化 HTML DSL | [chapter_05_generics](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_05_generics) | [《Kotlin 泛型》](https://juejin.im/post/6856553487598256141)
 | Kotlin 扩展 Span | [chapter_06_extension](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_06_extension) | [《Kotlin 扩展》](https://juejin.im/post/6857678090794237959)
 | Kotlin 委托 SharedPreferences | [chapter_07_delegate](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_07_delegate) | [《Kotlin 委托》](https://juejin.im/post/6859172099680894989)
+| Kotlin 协程调试 | [chapter_08_coroutine_debug](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_08_coroutine_debug) | [《协程“不为人知”的调试技巧》](https://juejin.im/post/6860647298926379021)
 
 ## 项目截图
 -----------------
