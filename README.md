@@ -20,6 +20,7 @@ A super-simple project demonstrating how to use Kotlin and Jetpack step by step.
 | Kotlin Generics Training | [chapter_05_generics](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_05_generics) | [Kotlin Generics](https://juejin.im/post/6856553487598256141)
 | Kotlin Extension Training | [chapter_06_extension](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_06_extension) | [Kotlin Extension](https://juejin.im/post/6857678090794237959)
 | Kotlin Delegation Training | [chapter_07_delegate](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_07_delegate) | [Kotlin Delegation](https://juejin.im/post/6857678090794237959)
+| Kotlin Coroutine Debug | [chapter_08_coroutine_debug](https://github.com/chaxiu/KotlinJetpackInAction/tree/chapter_08_coroutine_debug) | [Kotlin Coroutine Debug Skill](https://juejin.im/post/6860647298926379021)
 
 ## ScreenShot
 -----------------
