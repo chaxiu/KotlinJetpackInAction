@@ -14,6 +14,7 @@ object Libs {
             "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlinVersion}"
     const val ktxCore = "androidx.core:core-ktx:${Versions.ktxCore}"
     const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
+    const val coroutinesTest = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutines}"
     const val coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
 
     // other

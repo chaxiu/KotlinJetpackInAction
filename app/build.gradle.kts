@@ -59,6 +59,7 @@ dependencies {
     implementation(Libs.kotlinStdLib)
     implementation(Libs.ktxCore)
     implementation(Libs.coroutines)
+    implementation(Libs.coroutinesTest)
     implementation(Libs.coroutinesAndroid)
 
     // Network

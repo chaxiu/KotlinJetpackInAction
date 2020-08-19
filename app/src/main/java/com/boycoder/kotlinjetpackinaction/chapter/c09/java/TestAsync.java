@@ -54,7 +54,7 @@ class TestAsync {
             public void run() {
                 try {
                     Thread.sleep(1000L);
-                    callBack.onSuccess("zhutao");
+                    callBack.onSuccess("BoyCoder");
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
