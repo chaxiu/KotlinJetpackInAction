@@ -40,4 +40,4 @@
 
 #### [协程动图解释](https://boycoder.medium.com/kotlin-coroutines-animation-explanation-dba6d4d5888b)
 
-![Coroutines Under The Hood](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/56ba74c4febf4140a26174eac73e1880~tplv-k3u1fbpfcp-watermark.image)
+![Coroutines Under The Hood](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/eaac4c67460047e1a95148a3adb9b51b~tplv-k3u1fbpfcp-watermark.image)
