@@ -44,4 +44,4 @@ A super-simple project demonstrating how to use Kotlin and Jetpack step by step.
 
 #### [Coroutines Under The Hood](https://boycoder.medium.com/kotlin-coroutines-animation-explanation-dba6d4d5888b)
 
-![Coroutines Under The Hood](https://miro.medium.com/max/2100/1*AlHIXYgNf6Fxjw2MqwmZfQ.gif)
+![Coroutines Under The Hood](./screenshot/coroutines-all-full.gif)
