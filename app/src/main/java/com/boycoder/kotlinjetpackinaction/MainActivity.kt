@@ -9,6 +9,7 @@ import com.android.volley.RequestQueue
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.boycoder.kotlinjetpackinaction.databinding.ActivityMainBinding
 import com.boycoder.kotlinjetpackinaction.chapter.c04.WebActivity
 import com.boycoder.kotlinjetpackinaction.entity.User
 import com.bumptech.glide.Glide
@@ -22,10 +23,11 @@ class MainActivity : AppCompatActivity() {
     private val requestQueue: RequestQueue by lazy(LazyThreadSafetyMode.NONE) {
         Volley.newRequestQueue(this)
     }
+    private val binding: ActivityMainBinding by lazy(LazyThreadSafetyMode.NONE) { ActivityMainBinding.inflate(layoutInflater) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(binding.root)
         init()
     }
 
@@ -55,12 +57,12 @@ class MainActivity : AppCompatActivity() {
         val gson = Gson()
         val user = gson.fromJson(response, User::class.java)
         user?.apply {
-            Glide.with(this@MainActivity).load("file:///android_asset/bless.gif").into(gif)
-            Glide.with(this@MainActivity).load(user.avatar_url).apply(RequestOptions.circleCropTransform()).into(image)
-            username.text = name
-            this@MainActivity.company.text = company
-            website.text = blog
-            image.setOnClickListener { gotoImagePreviewActivity(this) }
+            Glide.with(this@MainActivity).load("file:///android_asset/bless.gif").into(binding.gif)
+            Glide.with(this@MainActivity).load(user.avatar_url).apply(RequestOptions.circleCropTransform()).into(binding.image)
+            binding.username.text = name
+            binding.company.text = company
+            binding.website.text = blog
+            binding.image.setOnClickListener { gotoImagePreviewActivity(this) }
             username.setOnClickListener { gotoWebActivity() }
         }
 
