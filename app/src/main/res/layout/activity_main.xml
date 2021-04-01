@@ -6,7 +6,7 @@
     android:background="@android:color/white"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <ImageView
         android:id="@+id/gif"

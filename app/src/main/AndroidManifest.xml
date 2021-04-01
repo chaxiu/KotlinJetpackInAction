@@ -13,8 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".chapter.c04.WebActivity"></activity>
-        <activity android:name=".ImagePreviewActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.ImagePreviewActivity" />
+        <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

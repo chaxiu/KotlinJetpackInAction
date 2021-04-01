@@ -1,4 +1,4 @@
-package com.boycoder.kotlinjetpackinaction
+package com.boycoder.kotlinjetpackinaction.ui
 
 import android.content.Intent
 import android.graphics.Color
@@ -10,6 +10,8 @@ import com.android.volley.Request
 import com.android.volley.RequestQueue
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.boycoder.kotlinjetpackinaction.EXTRA_PHOTO
+import com.boycoder.kotlinjetpackinaction.SP_KEY_RESPONSE
 import com.boycoder.kotlinjetpackinaction.chapter.c04.WebActivity
 import com.boycoder.kotlinjetpackinaction.chapter.c06.*
 import com.boycoder.kotlinjetpackinaction.chapter.c07.PreDelegate

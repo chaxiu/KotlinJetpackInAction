@@ -1,4 +1,4 @@
-package com.boycoder.kotlinjetpackinaction;
+package com.boycoder.kotlinjetpackinaction.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.boycoder.kotlinjetpackinaction.Constant;
+import com.boycoder.kotlinjetpackinaction.R;
 import com.bumptech.glide.Glide;
 
 public class ImagePreviewActivity extends AppCompatActivity {
