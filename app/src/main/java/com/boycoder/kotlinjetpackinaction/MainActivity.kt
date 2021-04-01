@@ -15,7 +15,6 @@ import com.boycoder.kotlinjetpackinaction.entity.User
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.google.gson.Gson
-import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -63,7 +62,7 @@ class MainActivity : AppCompatActivity() {
             binding.company.text = company
             binding.website.text = blog
             binding.image.setOnClickListener { gotoImagePreviewActivity(this) }
-            username.setOnClickListener { gotoWebActivity() }
+            binding.username.setOnClickListener { gotoWebActivity() }
         }
 
     }
