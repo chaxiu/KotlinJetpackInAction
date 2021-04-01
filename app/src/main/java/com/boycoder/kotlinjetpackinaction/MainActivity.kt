@@ -15,15 +15,18 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.boycoder.kotlinjetpackinaction.chapter.c04.WebActivity
 import com.boycoder.kotlinjetpackinaction.chapter.c06.*
+import com.boycoder.kotlinjetpackinaction.databinding.ActivityMainBinding
 import com.boycoder.kotlinjetpackinaction.entity.User
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.google.gson.Gson
-import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
     private val TAG = "Main"
+
+    private val binding: ActivityMainBinding by lazy(LazyThreadSafetyMode.NONE) { ActivityMainBinding.inflate(layoutInflater) }
+
     private val requestQueue: RequestQueue by lazy(LazyThreadSafetyMode.NONE) {
         Volley.newRequestQueue(this)
     }
@@ -38,7 +41,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(binding.root)
         init()
     }
 
@@ -71,12 +74,12 @@ class MainActivity : AppCompatActivity() {
         val gson = Gson()
         val user = gson.fromJson(response, User::class.java)
         user?.apply {
-            Glide.with(this@MainActivity).load("file:///android_asset/bless.gif").into(gif)
-            Glide.with(this@MainActivity).load(user.avatar_url).apply(RequestOptions.circleCropTransform()).into(image)
-            image.setOnClickListener { gotoImagePreviewActivity(this) }
-            username.setOnClickListener { gotoWebActivity() }
+            Glide.with(this@MainActivity).load("file:///android_asset/bless.gif").into(binding.gif)
+            Glide.with(this@MainActivity).load(user.avatar_url).apply(RequestOptions.circleCropTransform()).into(binding.image)
+            binding.image.setOnClickListener { gotoImagePreviewActivity(this) }
+            binding.username.setOnClickListener { gotoWebActivity() }
 
-            username.text = ktxSpan {
+            binding.username.text = ktxSpan {
                 name!!.bold().italic().size(1.3F).background(Color.YELLOW)
                         .append("\n")
                         .append("\n")
@@ -88,7 +91,7 @@ class MainActivity : AppCompatActivity() {
                         .append(url(blog!!, blog))
             }
 
-            username.movementMethod = LinkMovementMethod.getInstance()
+            binding.username.movementMethod = LinkMovementMethod.getInstance()
         }
 
     }
