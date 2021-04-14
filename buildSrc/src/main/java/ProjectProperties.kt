@@ -7,5 +7,5 @@ object ProjectProperties {
     const val versionCode = 1
     const val versionName = "1.0.0"
 
-    const val agpVersion = "4.0.2"
+    const val agpVersion = "4.1.3"
 }
