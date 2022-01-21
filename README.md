@@ -1,5 +1,5 @@
 
-![](https://ftp.bmp.ovh/imgs/2021/02/5531b8c6b973c434.jpeg)
+![](screenshot/Kotlin-Jetpack-In-Action-Cover.jpeg)
 
 ## [中文](./README_CN.md)
 
