@@ -1,5 +1,5 @@
 
-![](screenshot/Kotlin-Jetpack-In-Action-Cover.jpeg)
+![Day1.003.jpeg](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/81761b0109dc406daef15170486993ed~tplv-k3u1fbpfcp-watermark.image?)
 
 ## [中文](./README_CN.md)
 
